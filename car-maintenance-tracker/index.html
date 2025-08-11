@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <h1>Daily Finance Tracker</h1>
+
+  <div id="summary-section">
+    <p><strong>Total Earnings:</strong> ৳<span id="total-earnings">0</span></p>
+    <p><strong>Total Costs:</strong> ৳<span id="total-costs">0</span></p>
+    <p><strong>Total Savings:</strong> ৳<span id="total-savings">0</span></p>
+  </div>
+
+  <form id="entry-form">
+    <h2>Add Daily Entry</h2>
+    <input type="date" id="date" required>
+    <input type="text" id="task" placeholder="Task Name" required>
+    <input type="number" id="earning" placeholder="Earning Amount (৳)" required>
+    <input type="text" id="cost-name" placeholder="Cost Description" required>
+    <input type="number" id="cost-amount" placeholder="Cost Amount (৳)" required>
+    <button type="submit">Add Entry</button>
+  </form>
+
+  <button id="clear-all">🧹 Clear All Entries</button>
+
+  <h2>Daily History</h2>
+  <ul id="entry-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
